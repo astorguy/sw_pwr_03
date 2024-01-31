@@ -11,7 +11,10 @@
       "openFiles": []
     },
     "vscode": {
-      "settings": {},
+      "settings": {
+        "python.formatting.provider": "black",
+        "workbench.colorTheme": "One Dark Pro"
+      },
       "extensions": [
 	      "njpwerner.autodocstring",
 	      "ms-python.black-defaultFormatter",
