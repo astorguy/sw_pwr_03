@@ -1,6 +1,6 @@
 {
   // "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
-  "name": "Python3_12_ngspice",
+  "name": "debian12_python3_12_ngspice",
   "build": {
     "dockerfile": "Dockerfile"
   },
