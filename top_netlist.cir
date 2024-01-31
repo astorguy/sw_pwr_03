@@ -1,0 +1,8 @@
+** top level netlist**
+R1 IN MID 1K
+C1 COM MID 0.1U
+R2 MID OUT 100
+RLOAD OUT COM 100K
+VIN IN 0 1
+VCOM COM 0 0
+.op
