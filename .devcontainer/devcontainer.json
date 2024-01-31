@@ -26,7 +26,7 @@
         "naumovs.color-highlight",
         "ms-python.python",
         "ms-python.vscode-pylance",
-        "ms-python.black-defaultFormatter",
+        "ms-python.black-formatter",
         "ms-toolsai.jupyter",
         "ms-python.isort",
         "zhuangtongfa.material-theme",
