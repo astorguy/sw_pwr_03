@@ -11,6 +11,7 @@
       "openFiles": []
     },
     "vscode": {
+      "settings": {},
       "extensions": [
 	      "njpwerner.autodocstring",
 	      "ms-python.black-defaultFormatter",
@@ -18,7 +19,7 @@
 	      "ms-python.isort",
 	      "ms-python.python",
 	      "ms-toolsai.jupyter",
-	      "pkief.material-icon-theme",
+        "zhuangtongfa.material-theme",
 	      "yy0931.mplstyle",
 	      "ms-python.pylint",
 	      "xuanli.spice"
