@@ -1,11 +1,15 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  // "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "name": "Python_ngspice",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "hostRequirements": {
     "cpus": 2
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "sudo apt-get update && sudo apt-get -y install ngspice",
+  // "postCreateCommand": "sudo apt-get update && sudo apt-get -y install ngspice",
   "customizations": {
     "codespaces": {
       "openFiles": []
@@ -17,16 +21,16 @@
         "workbench.colorTheme": "One Dark Pro"
       },
       "extensions": [
-	      "njpwerner.autodocstring",
-	      "ms-python.black-defaultFormatter",
-	      "naumovs.color-highlight",
-	      "ms-python.isort",
-	      "ms-python.python",
-	      "ms-toolsai.jupyter",
+        "njpwerner.autodocstring",
+        "ms-python.black-defaultFormatter",
+        "naumovs.color-highlight",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
         "zhuangtongfa.material-theme",
-	      "yy0931.mplstyle",
-	      "ms-python.pylint",
-	      "xuanli.spice"
+        "yy0931.mplstyle",
+        "ms-python.pylint",
+        "xuanli.spice"
       ]
     }
   }
