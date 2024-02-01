@@ -25,22 +25,28 @@
         "python.formatting.provider": "none",
         "[python]": {
           "editor.defaultFormatter": "ms-python.black-formatter",
-          "editor.formatOnSave": true
-        }
-      },
-      "extensions": [
-        "njpwerner.autodocstring",
-        "naumovs.color-highlight",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-python.black-formatter",
-        "ms-python.flake8",
-        "ms-python.isort",
-        "ms-toolsai.jupyter",
-        "zhuangtongfa.material-theme",
-        "yy0931.mplstyle",
-        "xuanli.spice"
-      ]
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+          }
+        },
+        "isort.args": [
+          "--profile",
+          "black"
+        ],
+        "extensions": [
+          "njpwerner.autodocstring",
+          "naumovs.color-highlight",
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-python.black-formatter",
+          "ms-python.flake8",
+          "ms-python.isort",
+          "ms-toolsai.jupyter",
+          "zhuangtongfa.material-theme",
+          "yy0931.mplstyle",
+          "xuanli.spice"
+        ]
+      }
     }
   }
-}
