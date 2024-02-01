@@ -21,12 +21,6 @@
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-        "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-        "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-        "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
-        "python.linting.enabled": true,
-        "python.linting.pylintEnabled": false,
-        "python.linting.flake8Enabled": true,
         "workbench.colorTheme": "One Dark Pro"
       },
       "extensions": [
@@ -35,11 +29,11 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-python.black-formatter",
-        "ms-toolsai.jupyter",
+        "ms-python.flake8",
         "ms-python.isort",
+        "ms-toolsai.jupyter",
         "zhuangtongfa.material-theme",
         "yy0931.mplstyle",
-        "ms-python.pylint",
         "xuanli.spice"
       ]
     }
