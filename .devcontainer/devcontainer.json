@@ -21,7 +21,10 @@
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-        "workbench.colorTheme": "One Dark Pro"
+        "workbench.colorTheme": "One Dark Pro",
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        }
       },
       "extensions": [
         "njpwerner.autodocstring",
