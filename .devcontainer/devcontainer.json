@@ -17,6 +17,7 @@
     "vscode": {
       "settings": {
         "editor.formatOnSave": true,
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
         "python.formatting.provider": "black",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "workbench.colorTheme": "One Dark Pro"
