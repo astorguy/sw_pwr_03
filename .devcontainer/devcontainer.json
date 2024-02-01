@@ -18,7 +18,6 @@
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "editor.formatOnSave": true,
-        "python.formatting.provider": "black",
         "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
         "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
@@ -28,7 +27,6 @@
         "python.linting.enabled": true,
         "python.linting.pylintEnabled": false,
         "python.linting.flake8Enabled": true,
-        "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
         "workbench.colorTheme": "One Dark Pro"
       },
       "extensions": [
