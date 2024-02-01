@@ -162,7 +162,7 @@ class SimResults:
             indices_for_deletion.sort(reverse=True)
             del indices_for_deletion[-1]  # remove index 0 (x-axis) from list
 
-            # Delete header names and data columns, starting from the end, working backwards
+            # Delete header names & data columns, starting from end, working backwards
             for i in indices_for_deletion:
                 del self.header[i]
                 self.data = np.delete(self.data, i, axis=1)
