@@ -1,4 +1,6 @@
 """setup or run an ngspice simulation """
+
+import logging
 import subprocess
 from pathlib import Path
 
@@ -11,13 +13,16 @@ class Simulate:
         self.netlist_filename: Path = netlist_filename
 
     @property
-    def ngspice_command(self) -> str:
-        """complete ngspice command"""
-        return f"{self.ngspice_exe} {self.netlist_filename}"
+    def ngspice_command(self) -> list[str]:
+        """define the ngspice command"""
+        return [str(self.ngspice_exe), "-b", str(self.netlist_filename)]
 
     def __str__(self) -> str:
-        return self.ngspice_command
+        return " ".join(self.ngspice_command)
 
     def run(self) -> None:
-        """execute the simulation"""
-        subprocess.run(self.ngspice_command, check=True)
+        """Execute the ngspice simulation."""
+        try:
+            subprocess.run(self.ngspice_command, check=True)
+        except subprocess.CalledProcessError as e:
+            logging.error(f"Error running ngspice simulation: {e}")
