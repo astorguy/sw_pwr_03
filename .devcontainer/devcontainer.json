@@ -8,7 +8,9 @@
     "cpus": 2
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+
+  //  These next two lines commented because they are done in Dockerfile
+  // "updateContentCommand": "python3 -m pip install -r requirements.txt",
   // "postCreateCommand": "sudo apt-get update && sudo apt-get -y install ngspice",
   "customizations": {
     "codespaces": {
@@ -39,6 +41,7 @@
       "extensions": [
         "njpwerner.autodocstring",
         "naumovs.color-highlight",
+        "ms-azuretools.vscode-docker",
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-python.black-formatter",
