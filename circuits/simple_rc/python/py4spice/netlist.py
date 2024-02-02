@@ -29,6 +29,12 @@ class Netlist:
         lines: list[str] = file_text.splitlines()
         self.netlist_data = [word.split() for word in lines]
 
+    def __add__(self, other: "Netlist") -> "Netlist":
+        """Concatenate two objects."""
+        result = Netlist()
+        result.netlist_data = self.netlist_data + other.netlist_data
+        return result
+
     def insert_line(self, index: int, new_line: str) -> None:
         """insert one or more lines into netlist"""
         words: list[str] = new_line.split()
