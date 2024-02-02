@@ -8,13 +8,13 @@ VCOM COM 0 0
 VIN IN 0 PULSE (0 10 0 3N 3N 100M)
 .op
 .control
-* Timestamp: Fri Feb 2 04:18:09 2024
+* Timestamp: Fri Feb 2 04:42:28 2024
 set wr_singlescale $ makes one x-axis for wrdata
 set wr_vecnames $ puts names at top of columns
 listing
 op
-print line all > /workspaces/sw_pwr_03/circuits/simple_rc/results/op1.txt
+print line in mid out > /workspaces/sw_pwr_03/circuits/simple_rc/results/op1.txt
 tran 1e-3 20e-3
-wrdata /workspaces/sw_pwr_03/circuits/simple_rc/results/tr1.txt all
+wrdata /workspaces/sw_pwr_03/circuits/simple_rc/results/tr1.txt in mid out
 quit
 .endc
