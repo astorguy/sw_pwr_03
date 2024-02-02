@@ -1,11 +1,11 @@
 .control
-* Timestamp: Fri Feb  2 16:33:17 2024
+* Timestamp: Fri Feb  2 20:20:16 2024
 set wr_singlescale  $ makes one x-axis for wrdata
 set wr_vecnames     $ puts names at top of columns
 listing
 op
-print line in mid > /workspaces/sw_pwr_03/circuits/simple_rc/results/op1.txt
+print line in mid > /workspaces/sw_pwr_03/circuits/simple_rc/sim_results/op1.txt
 tran 1e-3 20e-3
-wrdata /workspaces/sw_pwr_03/circuits/simple_rc/results/tr1.txt in mid
+wrdata /workspaces/sw_pwr_03/circuits/simple_rc/sim_results/tr1.txt in mid
 quit
 .endc
